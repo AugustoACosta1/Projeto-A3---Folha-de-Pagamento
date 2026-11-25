@@ -1,0 +1,38 @@
+
+public class Colaborador {
+
+    public static final double SALARIO_BASE = 2000.00;
+
+    private int matricula;
+    private String nome;
+    private double salarioBase;
+
+    public Colaborador(int matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
+        this.salarioBase = SALARIO_BASE;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public double calcularSalarioFinal() {
+        return salarioBase;
+    }
+
+    public void exibirDados() {
+        System.out.println("Matricula: " + matricula);
+        System.out.println("Nome: " + nome);
+        System.out.println("Salario base: R$ " + salarioBase);
+        System.out.println("Salario final: R$ " + calcularSalarioFinal());
+    }
+}
